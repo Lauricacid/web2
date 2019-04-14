@@ -1,0 +1,10 @@
+<?php require_once('lib/header.php');?>
+<?php require_once('view/top.php')?>
+        <a href="create.php?<?=toss_parameter('id')?>">create</a>
+        <?php if(isset($_GET['id'])){?>
+        <a href="update.php?id=<?=$_GET['id']?>">update</a>
+        <?php }?>
+        <?php if(isset($_GET['id'])){?>
+        <a href="delete.php?id=<?=$_GET['id']?>">delete</a>
+        <?php }?>
+<?php require_once('view/bottom.php');?>
